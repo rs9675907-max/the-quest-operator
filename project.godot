@@ -11,7 +11,11 @@ config_version=5
 [application]
 
 config/name="The quest operator"
+<<<<<<< HEAD
 run/main_scene="uid://b7p5133ttynvx"
+=======
+run/main_scene="uid://uh33ivgt2rss"
+>>>>>>> b6b93c3730d62319e5e7bc9764851ed1a7e87886
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
 
