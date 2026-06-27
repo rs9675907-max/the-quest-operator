@@ -1,15 +1,14 @@
 extends Node2D
 
-var switch_rooms = 0
+var json_description = JSON.parse_string(FileAccess.get_file_as_string("res://test_json/map1.json"))
+var rooms_number = "01"
+var access_room = json_description[rooms_number]
 
 func _ready() -> void:
 	pass 
 
 func _process(delta: float) -> void:
-	if switch_rooms == 1:
-		position = Vector2(20, 30)
-	if switch_rooms == 2:
-		position = Vector2(30, 40)
+	print(rooms_number)
 
 func _on_timer_timeout() -> void:
-	switch_rooms = randi_range(1, 2) 
+	rooms_number = access_room[randi() % access_room.size()]
