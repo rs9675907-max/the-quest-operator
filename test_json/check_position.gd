@@ -8,3 +8,8 @@ func _ready():
 	var a = "12"
 	var access_room = json_description[a]
 	print("Доступные комнаты", access_room)
+	
+	
+	# рандомная комната от доступной
+	var random_room = access_room[randi() % access_room.size()]
+	print(random_room)
