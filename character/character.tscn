@@ -19,7 +19,7 @@ scale = Vector2(0.24023438, 0.1953125)
 texture = ExtResource("2_ugqs2")
 
 [node name="Timer" type="Timer" parent="." unique_id=1101459566]
-wait_time = 2.0
+wait_time = 5.0
 autostart = true
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
