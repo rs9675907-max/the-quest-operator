@@ -1,0 +1,6 @@
+extends Node
+
+func _ready():
+	print("check_position")
+	var json_description = JSON.parse_string(FileAccess.get_file_as_string("res://test_json/map1.json"))
+	print(json_description)
